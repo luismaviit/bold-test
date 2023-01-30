@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import reactLogo from "./assets/react.svg";
 import AppProvider from "./context/AppProvider";
-import Sales from "./components/sales";
+import Nav from "./components/nav";
 import "./App.css";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           </a>
         </div>
         <h1>Vite + React</h1>
-        <Sales />
+        <h1><Nav /></h1>
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
