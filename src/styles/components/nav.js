@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     #121e6c 51%,
     #121e6c 100%
   );
-  height: 74px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,26 +25,26 @@ export const Nav = styled.nav`
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 35px;
+      gap: 80px;
 
       li {
         a {
           font-family: Monserrat, sans-serif;
           text-decoration: none;
-          font-size: 14px;
+          font-size: 22px;  
           color: #fff;
           padding: 0.5rem 0.5rem;   
           transition: all .1s ease;
           border-radius: 1.5rem;
-
           &:hover {
             background-color: rgba(255, 255,255, 0.7);
             border: 0 solid #e2e8f0;
             border-radius: 1.5rem;
             color:  #111e6c;
-            cursor: pointer;
+            
             font-family: Monserrat, sans-serif;
-            font-size: 14px;
+            font-size: 22px;
+            font-weight: 500;
             text-decoration: none;
             padding: 0.5rem 0.5rem;
           }

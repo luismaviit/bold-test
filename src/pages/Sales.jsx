@@ -1,15 +1,19 @@
 import React from "react";
-import Nav from "../components/Nav";
+import NavBar from "../components/NavBar";
 import CardSales from "../components/CardSales";
+import ActionBar from "../components/ActionBar";
 import { Wrapper } from "../styles/pages/sales";
 
 export default function Sales() {
   return (
     <Wrapper>
-      <Nav />
-      <div>
+      <NavBar />
+
+      <div className="content-page">
         <CardSales />
+        <ActionBar />
       </div>
+      
     </Wrapper>
   );
 }
