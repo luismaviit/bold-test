@@ -41,7 +41,7 @@ export default function FilterButton() {
       </Button>
 
       <ul
-        className={`${openFilter ? "hidden-container" : "visible-container"}`}
+        className={`${openFilter ? "visible-container" : "hidden-container"}`}
       >
         <li>
           <input

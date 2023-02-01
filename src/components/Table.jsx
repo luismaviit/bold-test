@@ -14,11 +14,11 @@ export default function Table() {
       <div className="container-header">
         <span className="header-tab">Tus ventas de hoy</span>
       </div>
-      <div className="contents-header">
+      {/* <div className="contents-header">
         {headerContent.map((option, index) => (
           <span key={index} className="contents-span"> {option} </span>
         ))}
-      </div>
+      </div> */}
       <div className="contents-table">
         
       </div>
