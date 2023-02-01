@@ -5,13 +5,13 @@ import AppContext from "./AppContext";
 
 const AppProvider = ({ children }) => {
 
-    const [test, setTest] = useState("Hola desde el CONTEXT");
+    const [openFilter, setOpenFilter] = useState(false);
 
 
   return (
     <AppContext.Provider
       value={{
-        test, setTest
+        openFilter, setOpenFilter
       }}
     >
       {children}

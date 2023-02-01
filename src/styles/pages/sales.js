@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Container from "@mui/material/Container";
+
 export const Wrapper = styled.div`
   background: #e5e7ef;
 
@@ -7,6 +9,14 @@ export const Wrapper = styled.div`
       display: flex;
       gap: 30px;
     }
+    .tab{
+      display: flex;
+      justify-content: center;
+    }
     
  
 `;
+
+export const ContainerBody= styled(Container)`
+
+`

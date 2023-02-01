@@ -17,7 +17,7 @@ export const Nav = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 95%;
+    width: 100%;
     justify-content: space-between;
 
     ul {
@@ -25,7 +25,7 @@ export const Nav = styled.nav`
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 80px;
+      gap: 150px;
 
       li {
         a {
