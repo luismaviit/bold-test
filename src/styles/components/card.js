@@ -19,7 +19,6 @@ export const Card = styled.div`
     justify-content: space-between;
     span {
       margin: 15px;
-      font-family: Monserrtar, sans-serif;
       font-size: 200%;
       color: white;
     }
@@ -33,7 +32,6 @@ export const Card = styled.div`
     margin: 30px;
 
     .total-sales {
-      font-family: Monserrtar, sans-serif;
       background: linear-gradient(270deg, #b06477 0%, #62325e 100%);
       font-weight: bold;
       font-size: 400%;
@@ -43,7 +41,6 @@ export const Card = styled.div`
     }
 
     .current-date {
-      font-family: Monserrtar, sans-serif;
       font-size: 150%;
       color: #111e6c;
     }

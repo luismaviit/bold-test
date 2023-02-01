@@ -29,7 +29,6 @@ export const Nav = styled.nav`
 
       li {
         a {
-          font-family: Monserrat, sans-serif;
           text-decoration: none;
           font-size: 22px;  
           color: #fff;
@@ -40,8 +39,7 @@ export const Nav = styled.nav`
             background-color: rgba(255, 255,255, 0.7);
             border: 0 solid #e2e8f0;
             border-radius: 1.5rem;
-            color:  #111e6c;
-            
+            color:  #111e6c;           
             font-family: Monserrat, sans-serif;
             font-size: 22px;
             font-weight: 500;

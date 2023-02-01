@@ -5,7 +5,7 @@ export const Actions = styled.nav`
 
   .container-button {
     width: 300px;
-    height: 70px;
+    height: 60px;
     background-color: white;
     display: flex;
     flex-direction: column;
