@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import {
   Button,
   Div,
@@ -11,12 +11,25 @@ import AppContext from "../context/AppContext";
 import TuneIcon from "@mui/icons-material/Tune";
 
 export default function FilterButton() {
+  /* useEffect(() => {
+    LocalFilter();
+  }, []); */
+
   const { openFilter, setOpenFilter } = useContext(AppContext);
   const [dataFilter, setDataFilter] = useState({
     cobroDatafono: false,
     cobroLink: false,
     verTodo: false,
   });
+  /*  const LocalFilter = () => {
+    if (localStorage.getItem("datafono") != null) {
+      setDataFilter({
+        ...dataFilter,
+        [cobroDatafono]: localStorage.getItem("datafono"),
+      });
+   
+    }
+  }; */
   const handleOpen = () => {
     setOpenFilter(!openFilter);
   };
@@ -27,8 +40,13 @@ export default function FilterButton() {
       [name]: checked,
     });
   };
+
   const ApplyChange = () => {
-    localStorage.setItem("checks", `${dataFilter}`);
+    localStorage.setItem("datafono", `${dataFilter.cobroDatafono}`);
+    localStorage.setItem("link", `${dataFilter.cobroLink}`);
+    localStorage.setItem("all", `${dataFilter.verTodo}`);
+
+    setOpenFilter(!openFilter);
   };
 
   return (
@@ -39,13 +57,16 @@ export default function FilterButton() {
           <TuneIcon />
         </span>
       </Button>
-
       <ul
         className={`${openFilter ? "visible-container" : "hidden-container"}`}
       >
         <li>
           <input
-            checked={dataFilter.cobroDatafono}
+            checked={`${
+              dataFilter.cobroDatafono == null
+                ? dataFilter.cobroDatafono
+                : localStorage.getItem("datafono")
+            }`}
             name="cobroDatafono"
             type="checkbox"
             value="cobros con datafono "
@@ -75,6 +96,9 @@ export default function FilterButton() {
         </li>
 
         <SendButton onClick={() => ApplyChange()}>Aplicar</SendButton>
+        {/* <button onClick={() => console.log(localStorage.getItem("datafono"))}>
+          mostrar data
+        </button> */}
       </ul>
     </Div>
   );
