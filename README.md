@@ -1,7 +1,7 @@
 
 # :computer: Bold Test
 
-![plot](./src/assets/bold.PNG)
+![plot](./src/assets/bold.png)
 
 ## :memo: Instrucciones.
 
