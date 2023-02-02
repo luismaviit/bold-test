@@ -11,25 +11,13 @@ import AppContext from "../context/AppContext";
 import TuneIcon from "@mui/icons-material/Tune";
 
 export default function FilterButton() {
-  /* useEffect(() => {
-    LocalFilter();
-  }, []); */
-
   const { openFilter, setOpenFilter } = useContext(AppContext);
   const [dataFilter, setDataFilter] = useState({
     cobroDatafono: false,
     cobroLink: false,
     verTodo: false,
   });
-  /*  const LocalFilter = () => {
-    if (localStorage.getItem("datafono") != null) {
-      setDataFilter({
-        ...dataFilter,
-        [cobroDatafono]: localStorage.getItem("datafono"),
-      });
-   
-    }
-  }; */
+
   const handleOpen = () => {
     setOpenFilter(!openFilter);
   };
@@ -92,9 +80,6 @@ export default function FilterButton() {
         </li>
 
         <SendButton onClick={() => ApplyChange()}>Aplicar</SendButton>
-        {/* <button onClick={() => console.log(localStorage.getItem("datafono"))}>
-          mostrar data
-        </button> */}
       </ul>
     </Div>
   );
