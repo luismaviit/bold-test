@@ -1,39 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Actions } from "../styles/components/action-bar";
 import Grid from "@mui/material/Grid";
 
 export default function ActionBar() {
   const actionButton = ["Hoy", "Esta semana", "Septiembre"];
+  const [dataButton, setDataButton] = useState("");
   const ActiveToday = () => {
-    localStorage.setItem("filterButton", "today")
+    setDataButton("today");
+    localStorage.setItem("filterButton", "today");
   };
   const ActiveWeek = () => {
-    localStorage.setItem("filterButton", "week")
+    setDataButton("week");
+    localStorage.setItem("filterButton", "week");
   };
   const ActiveMonth = () => {
-    localStorage.setItem("filterButton", "month")
+    setDataButton("month");
+    localStorage.setItem("filterButton", "month");
   };
+  useEffect(() => {
+    setDataButton(localStorage.getItem("filterButton"));
+  }, []);
   return (
     <Actions>
       <Grid container spacing={0} sx={{}}>
         {/* {actionButton.map((option, index) => ( */}
         <Grid xl={4} lg={6} md={4} sm={10} xs={12} spacing={0}>
           <div className="container-button" /* key={index} */>
-            <button onClick={ActiveToday}>
+            <button
+              className={`${
+                dataButton == "today" ? "pushed-button" : "normal-button"
+              }`}
+              onClick={ActiveToday}
+            >
               {actionButton[0]}{" "}
             </button>
           </div>
         </Grid>
         <Grid xl={4} lg={6} md={4} sm={10} xs={12} spacing={0}>
           <div className="container-button" /* key={index} */>
-            <button onClick={ActiveWeek}>
+            <button
+              className={`${
+                dataButton == "week" ? "pushed-button" : "normal-button"
+              }`}
+              onClick={ActiveWeek}
+            >
               {actionButton[1]}{" "}
             </button>
           </div>
         </Grid>
         <Grid xl={4} lg={6} md={4} sm={10} xs={12} spacing={0}>
           <div className="container-button" /* key={index} */>
-            <button onClick={ActiveMonth}>
+            <button
+              className={`${
+                dataButton == "month" ? "pushed-button" : "normal-button"
+              }`}
+              onClick={ActiveMonth}
+            >
               {actionButton[2]}
             </button>
           </div>

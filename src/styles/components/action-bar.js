@@ -12,7 +12,7 @@ export const Actions = styled.nav`
     align-items: center;
     justify-content: center;
 
-    button {
+    .normal-button {
       width: 90%;
       height: 70%;
       background-color: transparent;
@@ -22,15 +22,36 @@ export const Actions = styled.nav`
       font-size: 22px;
       color: #111e6c;
       font-weight: 700;
-      transition: all .1s ease;
+      transition: all 0.1s ease;
       &:hover {
         cursor: pointer;
         border-radius: 3rem;
         width: 90%;
-        height:70% ;
-        background-color:rgba(50, 50, 50, 0.3);
+        height: 70%;
+        background-color: rgba(50, 50, 50, 0.3);
       }
-      
+    }
+    .pushed-button {
+      width: 90%;
+      height: 70%;
+      background-color: transparent;
+      border: none;
+      font-family: Monserrat, sans-serif;
+      text-decoration: none;
+      font-size: 22px;
+      color: #111e6c;
+      font-weight: 700;
+      transition: all 0.1s ease;
+      background-color: rgba(50, 50, 50, 0.3);
+      cursor: pointer;
+      border-radius: 3rem;
+      &:hover {
+        cursor: pointer;
+        border-radius: 3rem;
+        width: 90%;
+        height: 70%;
+        background-color: rgba(50, 50, 50, 0.2);
+      }
     }
   }
 `;

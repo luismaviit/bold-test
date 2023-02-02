@@ -62,11 +62,7 @@ export default function FilterButton() {
       >
         <li>
           <input
-            checked={`${
-              dataFilter.cobroDatafono == null
-                ? dataFilter.cobroDatafono
-                : localStorage.getItem("datafono")
-            }`}
+            checked={dataFilter.cobroDatafono}
             name="cobroDatafono"
             type="checkbox"
             value="cobros con datafono "
