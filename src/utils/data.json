@@ -1,29 +1,72 @@
 {
     "data": [
       {
-        "Transacción": [
+        "Hoy":"1'560.000"
+      },
+
+      {
+        "Transaccion": [
           {
             "Estado": false,
-            "Fecha y hora": "04/06/2020 - 17:14:24 ",
+            "Fecha": "06-30-2020",
+            "hora":"17:14:24",
             "Realizado": true,
-            "Metodo de pago": "**** **** **** 7711",
-            "ID transaccion Bold": "GZEN23784UBV2",
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "GZEN23784UBV2",
+            "Monto": "$25.000"
+          },
+          {
+            "Estado": false,
+            "Fecha": "06-30-2020",
+            "hora":"17:14:24",
+            "Realizado": true,
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "GZEN23784UBV2",
             "Monto": "$25.000"
           },
           {
             "Estado": true,
-            "Fecha y hora": "04/06/2020 - 17:14:24 ",
+            "Fecha": "06-25-2020",
+            "hora":"17:14:24",
             "Realizado": false,
-            "Metodo de pago": "**** **** **** 7711",
-            "ID transaccion Bold": "GZEN23784UBV2",
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "GZEN23784UBV2",
             "Monto": "$15.000"
           },
           {
             "Estado": false,
-            "Fecha y hora": "04/06/2020 - 17:14:24 ",
+            "Fecha": "06-23-2020",
+            "hora":"17:14:24",
             "Realizado": "false",
-            "Metodo de pago": "**** **** **** 7711",
-            "ID transaccion Bold": "id",
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "id",
+            "Monto": "$25.000"
+          },
+          {
+            "Estado": false,
+            "Fecha": "05-23-2020",
+            "hora":"17:14:24",
+            "Realizado": "false",
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "id",
+            "Monto": "$25.000"
+          },
+          {
+            "Estado": false,
+            "Fecha": "02-2023-2020",
+            "hora":"17:14:24",
+            "Realizado": "false",
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "id",
+            "Monto": "$25.000"
+          },
+          {
+            "Estado": false,
+            "Fecha": "07-2020-2020",
+            "hora":"17:14:24",
+            "Realizado": "false",
+            "MetodoPago": "**** **** **** 7711",
+            "IDtransaccionBold": "id",
             "Monto": "$25.000"
           }
         ]

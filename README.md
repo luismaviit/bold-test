@@ -32,7 +32,7 @@ Una vez instaladas todas las dependencias del proyecto, ejecute el comando `npm 
 
 ### Paso 5
 
-Al final el navegador se abre en el la URL `http://`${ip}`:5173/`, mostrando el proyecto.
+Al final el navegador se abre en el la URL `http://localhost:5173/`, mostrando el proyecto.
 
 ### :wrench: Herramientas 
 
